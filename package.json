@@ -1,0 +1,19 @@
+{
+  "name": "backend-rest",
+  "version": "0.0.1",
+  "description": "ClanITS Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "php -S localhost:8888 -t . ./index.php"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavitra14/ClanITS-Back.git"
+  },
+  "author": "Pavitra Behre, Himanshu Maheshwari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pavitra14/ClanITS-Back/issues"
+  },
+  "homepage": "https://github.com/pavitra14/ClanITS-Back#readme"
+}

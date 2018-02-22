@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1">
+    <label>Username :</label> <input type="text" name="user" id="">
+    <br>
+    <label>Password : </label> <input type="password" name="pass" id="">
+    <br>
+    <input type="button" value="Login" id="submit">
+    </form>
+
+    <div id="output"></div>
+
+    <script
+			  src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+              <script>
+    $(document).ready(function(){
+        // click on button submit
+        $("#submit").on('click', function(){
+            alert("sending ajax request");
+            // send ajax
+            $.ajax({
+                url: 'http://localhost:8888/api/v1/login', // url where to submit the request
+                type : "POST", // type of action POST || GET
+                dataType : 'json', // data type
+                data : $("#form1").serialize(), // post data || get data
+                success : function(result) {
+                    // you can see the result from the console
+                    // tab of the developer tools
+                    console.log(result);
+                    var asd = document.write(result);
+                    
+                },
+                error: function(xhr, resp, text) {
+                    console.log(xhr, resp, text);
+                   var asd = document.write(resp);
+                }
+            })
+        });
+    });
+
+</script>
+</body>
+</html>
