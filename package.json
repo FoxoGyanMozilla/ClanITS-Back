@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavitra14/ClanITS-Back.git"
+    "url": "git+https://github.com/FoxoGyanMozilla/ClanITS-Back.git"
   },
   "author": "Pavitra Behre, Himanshu Maheshwari",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pavitra14/ClanITS-Back/issues"
+    "url": "https://github.com/FoxoGyanMozilla/ClanITS-Back/issues"
   },
-  "homepage": "https://github.com/pavitra14/ClanITS-Back#readme"
+  "homepage": "https://github.com/FoxoGyanMozilla/ClanITS-Back#readme"
 }
